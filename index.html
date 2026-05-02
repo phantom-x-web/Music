@@ -588,7 +588,7 @@
       isPlaying       = true;
 
       const s = playlists[cat].songs[idx];
-      audio.src ="songs/"+ s.file;
+      audio.src = s.file;
       audio.load();
       audio.play().catch(() => {});
 
